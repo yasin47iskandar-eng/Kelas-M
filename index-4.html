@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelas M — Kelasnya Magister</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #1f2937;
+    }
+    header {
+      background: linear-gradient(135deg, #7b1113, #a51d22);
+      color: white;
+      padding: 28px 18px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 3px 12px rgba(0,0,0,.18);
+    }
+    header h1 { margin: 0 0 6px; font-size: 30px; }
+    header p { margin: 0; opacity: .92; }
+    nav {
+      margin-top: 18px;
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 9px 13px;
+      border: 1px solid rgba(255,255,255,.45);
+      border-radius: 20px;
+      font-size: 14px;
+    }
+    nav a:hover { background: white; color: #7b1113; }
+    main {
+      width: min(1000px, 92%);
+      margin: 25px auto 40px;
+    }
+    .hero, .box {
+      background: white;
+      border-radius: 18px;
+      padding: 24px;
+      margin-bottom: 18px;
+      box-shadow: 0 5px 18px rgba(0,0,0,.08);
+    }
+    .hero {
+      text-align: center;
+      border-top: 5px solid #d4a72c;
+    }
+    .hero h2 { color: #7b1113; margin-top: 0; }
+    .button {
+      display: inline-block;
+      border: 0;
+      background: #7b1113;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .button:hover { background: #5e0d0f; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 14px rgba(0,0,0,.07);
+      border-left: 5px solid #d4a72c;
+    }
+    .card h3 { margin-top: 0; color: #7b1113; }
+    .card a {
+      display: inline-block;
+      margin-top: 8px;
+      color: #7b1113;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    ul { padding-left: 20px; line-height: 1.8; }
+    .notice {
+      background: #fff8df;
+      border: 1px solid #ead48a;
+      padding: 14px;
+      border-radius: 12px;
+      margin-top: 12px;
+    }
+    footer {
+      text-align: center;
+      background: #20252b;
+      color: white;
+      padding: 24px 15px;
+    }
+    footer strong { color: #f0c84b; }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>🎓 Kelas M</h1>
+  <p>Kelasnya Magister</p>
+
+  <nav>
+    <a href="#home">Beranda</a>
+    <a href="#materi">Materi</a>
+    <a href="#jadwal">Jadwal</a>
+    <a href="#tugas">Tugas</a>
+    <a href="#insight">M-Insight</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero" id="home">
+    <h2>Selamat Datang di Kelas M 👋</h2>
+    <p>
+      Ruang digital untuk belajar, berbagi, berkolaborasi,
+      dan bertumbuh bersama sebagai mahasiswa magister.
+    </p>
+    <button class="button" onclick="selamatDatang()">
+      Mulai Belajar
+    </button>
+  </section>
+
+  <section class="box" id="materi">
+    <h2>📚 Materi Kuliah</h2>
+    <p>Materi perkuliahan akan tersedia di sini.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Materi 01</h3>
+        <p>Tambahkan materi kuliah pertama di sini.</p>
+        <a href="#" onclick="belumTersedia(event)">Buka Materi →</a>
+      </div>
+
+      <div class="card">
+        <h3>Materi 02</h3>
+        <p>Tambahkan materi kuliah kedua di sini.</p>
+        <a href="#" onclick="belumTersedia(event)">Buka Materi →</a>
+      </div>
+
+      <div class="card">
+        <h3>Materi 03</h3>
+        <p>Tambahkan materi kuliah ketiga di sini.</p>
+        <a href="#" onclick="belumTersedia(event)">Buka Materi →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="box" id="jadwal">
+    <h2>🗓️ Jadwal Kuliah</h2>
+    <p>Jadwal perkuliahan Kelas M akan ditampilkan di sini.</p>
+
+    <div class="notice">
+      <strong>Info:</strong> Silakan tambahkan jadwal kuliah,
+      tanggal, waktu, dan mata kuliah pada bagian ini.
+    </div>
+  </section>
+
+  <section class="box" id="tugas">
+    <h2>📝 Tugas & Deadline</h2>
+    <p>Informasi tugas dan deadline akan tersedia di sini.</p>
+
+    <ul>
+      <li>Tugas 01 — Belum ditambahkan</li>
+      <li>Tugas 02 — Belum ditambahkan</li>
+      <li>Tugas 03 — Belum ditambahkan</li>
+    </ul>
+  </section>
+
+  <section class="box" id="insight">
+    <h2>💡 M-Insight</h2>
+    <p>
+      Ruang berbagi gagasan, literasi, dan wawasan di era AI.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Literasi</h3>
+        <p>Bangun kebiasaan membaca, berpikir kritis, dan menulis.</p>
+      </div>
+
+      <div class="card">
+        <h3>AI & Pendidikan</h3>
+        <p>Manfaatkan AI sebagai alat bantu belajar secara bijak.</p>
+      </div>
+
+      <div class="card">
+        <h3>Berbagi Gagasan</h3>
+        <p>Bagikan ide dan wawasan yang bermanfaat bagi kelas.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div><strong>Kelas M</strong> — Kelasnya Magister</div>
+  <div style="margin-top:6px;">Belajar • Berbagi • Bertumbuh</div>
+</footer>
+
+<script>
+  function selamatDatang() {
+    alert("Selamat datang di Kelas M! 🎓");
+  }
+
+  function belumTersedia(event) {
+    event.preventDefault();
+    alert("Materi ini belum tersedia. Silakan tambahkan link materinya.");
+  }
+</script>
+
+</body>
+</html>
