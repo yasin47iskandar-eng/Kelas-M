@@ -1,79 +1,40 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kelas M — Kelasnya Magister</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kelas M — Kelasnya Magister</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f5f2f0;color:#24151a}
+header{background:#74172f;color:#fff;text-align:center;padding:30px 20px}header h1{margin:0;font-size:40px}header p{margin:8px 0 0}
+nav{background:#24151a;padding:14px;text-align:center}nav a{color:#fff;text-decoration:none;margin:0 8px;font-size:14px}
+main{max-width:1000px;margin:auto;padding:20px}section{margin:30px 0}
+.hero{background:#fff;border-radius:20px;padding:45px 25px;text-align:center}.hero h2{color:#74172f;font-size:30px}
+button{background:#d4aa55;border:0;padding:12px 20px;border-radius:10px;font-weight:bold;cursor:pointer}
+.card{background:#fff;padding:20px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,.07)}
+footer{background:#24151a;color:#fff;text-align:center;padding:25px;margin-top:40px}
+@media(max-width:600px){header h1{font-size:32px}nav a{display:inline-block;margin:5px}}
+</style>
 </head>
 <body>
-
-  <header>
-    <h1>Kelas M</h1>
-    <p>Kelasnya Magister</p>
-  </header>
-
-  <nav>
-    <a href="#beranda">Beranda</a>
-    <a href="#pengumuman">Pengumuman</a>
-    <a href="#materi">Materi</a>
-    <a href="#jadwal">Jadwal</a>
-    <a href="#tugas">Tugas</a>
-    <a href="#insight">M-Insight</a>
-  </nav>
-
-  <main>
-    <section id="beranda" class="hero">
-      <h2>Selamat Datang di Kelas M</h2>
-      <p>Ruang digital untuk belajar, berbagi, dan bertumbuh bersama.</p>
-      <button onclick="sapa()">Mulai Belajar</button>
-    </section>
-
-    <section id="pengumuman">
-      <h2>📢 Pengumuman</h2>
-      <div class="card">
-        <h3>Informasi Kelas</h3>
-        <p>Pengumuman penting Kelas M akan ditampilkan di sini.</p>
-      </div>
-    </section>
-
-    <section id="materi">
-      <h2>📚 Materi Kuliah</h2>
-      <div class="card">
-        <p>Materi perkuliahan dapat ditambahkan di sini.</p>
-      </div>
-    </section>
-
-    <section id="jadwal">
-      <h2>🗓️ Jadwal Kuliah</h2>
-      <div class="card">
-        <p>Jadwal perkuliahan akan ditampilkan di sini.</p>
-      </div>
-    </section>
-
-    <section id="tugas">
-      <h2>📝 Tugas & Deadline</h2>
-      <div class="card">
-        <p>Daftar tugas dan batas pengumpulan akan ditampilkan di sini.</p>
-      </div>
-    </section>
-
-    <section id="insight">
-      <h2>💡 M-Insight</h2>
-      <div class="card">
-        <h3>Literasi di Era AI</h3>
-        <p>
-          Ruang berbagi gagasan dan refleksi untuk memperkuat literasi
-          mahasiswa di tengah perkembangan teknologi dan AI.
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>Kelas M — Kelasnya Magister</p>
-  </footer>
-
-  <script src="script.js"></script>
+<header><h1>Kelas M</h1><p>Kelasnya Magister</p></header>
+<nav>
+<a href="#beranda">Beranda</a><a href="#pengumuman">Pengumuman</a><a href="#materi">Materi</a>
+<a href="#jadwal">Jadwal</a><a href="#tugas">Tugas</a><a href="#insight">M-Insight</a>
+</nav>
+<main>
+<section id="beranda" class="hero">
+<h2>Selamat Datang di Kelas M</h2>
+<p>Ruang digital untuk belajar, berbagi, dan bertumbuh bersama.</p>
+<button onclick="sapa()">Mulai Belajar</button>
+</section>
+<section id="pengumuman"><h2>📢 Pengumuman</h2><div class="card"><h3>Informasi Kelas</h3><p>Pengumuman penting Kelas M akan ditampilkan di sini.</p></div></section>
+<section id="materi"><h2>📚 Materi Kuliah</h2><div class="card"><p>Materi perkuliahan dapat ditambahkan di sini.</p></div></section>
+<section id="jadwal"><h2>🗓️ Jadwal Kuliah</h2><div class="card"><p>Jadwal perkuliahan akan ditampilkan di sini.</p></div></section>
+<section id="tugas"><h2>📝 Tugas & Deadline</h2><div class="card"><p>Daftar tugas dan batas pengumpulan akan ditampilkan di sini.</p></div></section>
+<section id="insight"><h2>💡 M-Insight</h2><div class="card"><h3>Literasi di Era AI</h3><p>Ruang berbagi gagasan dan refleksi untuk memperkuat literasi mahasiswa di tengah perkembangan teknologi dan AI.</p></div></section>
+</main>
+<footer>Kelas M — Kelasnya Magister</footer>
+<script>function sapa(){alert("Selamat datang di Kelas M! Mari belajar dan bertumbuh bersama.");}</script>
 </body>
 </html>
